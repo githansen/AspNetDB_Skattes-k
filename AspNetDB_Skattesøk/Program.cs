@@ -17,11 +17,11 @@ builder.Services.AddCors(options =>
             .AllowAnyMethod();
         });
 });
-//builder.Services.AddDbContext<Database>(options => options.UseSqlServer("data source=DESKTOP-5Q1PV9S;initial catalog=Person;trusted_connection=true"));
+builder.Services.AddDbContext<Database>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
 
 
 var app = builder.Build();
-//DBinit.Initialize(app);
+DBinit.Initialize(app);
 
 
 // Configure the HTTP request pipeline.
