@@ -17,7 +17,7 @@ builder.Services.AddCors(options =>
             .AllowAnyMethod();
         });
 });
-builder.Services.AddDbContext<Database>(options => options.UseSqlServer("Server=localhost;Database=Person;Trusted_Connection=True;"));
+builder.Services.AddDbContext<Database>(options => options.UseSqlServer("Server=tcp:serverdbtestbach.database.windows.net,1433;Initial Catalog=TestDatabase;Persist Security Info=False;User ID=s349880@oslomet.no;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Authentication=\"Active Directory Integrated\";"));
 
 
 var app = builder.Build();
