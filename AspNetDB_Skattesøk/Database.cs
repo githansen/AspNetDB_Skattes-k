@@ -8,7 +8,7 @@ namespace AspNetDB_Skattesøk
         public Database(DbContextOptions<Database> options) : base(options)
         {
     
-            Database.EnsureCreated();
+            Database.Migrate();
 
         }
         public virtual DbSet<Person> personer { get; set; }
