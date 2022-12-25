@@ -14,7 +14,7 @@ namespace AspNetDB_Skattesøk
 
                 var p = new Person()
                 {
-                    firstname = "Kjell",
+                    firstname = "Kjell2",
                     lastname = "Hansen",
                     salary = 555990,
                     wealth = 12500333,
