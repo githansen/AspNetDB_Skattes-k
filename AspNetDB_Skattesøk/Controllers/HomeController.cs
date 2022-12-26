@@ -18,15 +18,15 @@ namespace AspNetDB_Skattesøk.Controllers
         [Route("retur")]
         public string retur()
         {
-       
             return "HEI";
         }
         [HttpPost]
         [Route("lagre")]
-        public void lagre(Person p)
+        public string lagre(Person p)
         {
             _db.Add(p);
             _db.SaveChanges();
+            return "Suksess";
 
         }
     }
