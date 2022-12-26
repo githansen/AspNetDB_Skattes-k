@@ -4,7 +4,15 @@
       "secretStore": "AzureAppSettings",
       "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/serverdbtestbach/databases/TestDatabase",
       "type": "mssql.azure",
-      "connectionId": "ConnectionStrings:Default"
+      "connectionId": "ConnectionStrings:Test",
+      "dynamicId": null
+    },
+    "mssql2": {
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/serverdbtestbach/databases/TestDatabase",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:Default",
+      "dynamicId": null
     }
   }
 }
