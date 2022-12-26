@@ -14,7 +14,7 @@ function test() {
             'Content-Type': 'application/json'
         },
         'type': 'POST',
-        'url': "https://localhost:7170/api/Home/lagre",
+        'url': "https://skattjohan.azurewebsites.net/api/Home/lagre",
         'data': JSON.stringify(p),
         'dataType': 'json',
 
@@ -29,7 +29,7 @@ function App() {
 
             <label for="etternavn">Etternavn</label>
             <input type="text" id="etternavn"></input>
-            <button onClick={test}></button>
+            <button onClick={test}>LAGRE</button>
             hei
             
         </div>
