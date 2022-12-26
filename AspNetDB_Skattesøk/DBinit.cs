@@ -20,7 +20,7 @@ namespace AspNetDB_Skattesøk
                     wealth = 12500333,
                     taxes = 145000
                 };
-                context.personer.Add(p);
+                context.Add(p);
                 context.SaveChanges();
           
             }

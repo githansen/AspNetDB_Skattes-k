@@ -9,7 +9,7 @@ function test() {
     })
     
     $.get("https://localhost:7170/api/Home/retur", function (data) {
-        console.log(data);
+        $("#ut").html(data)
         console.log("PC")
     })
 }
