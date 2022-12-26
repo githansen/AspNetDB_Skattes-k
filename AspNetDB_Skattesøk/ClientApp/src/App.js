@@ -14,7 +14,7 @@ function test() {
             'Content-Type': 'application/json'
         },
         'type': 'POST',
-        'url': "https://skattjohan.azurewebsites.net/api/Home/lagre",
+        'url': "https://localhost:7170/api/Home/lagre",
         'data': JSON.stringify(p),
         'dataType': 'json',
 
