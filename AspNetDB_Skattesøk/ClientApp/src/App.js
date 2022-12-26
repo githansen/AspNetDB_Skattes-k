@@ -3,22 +3,35 @@ import $ from 'jquery'
 import './custom.css';
 
 function test() {
-    $.get("https://skattjohan.azurewebsites.net/api/Home/retur", function (data) {
-        console.log(data)
-        console.log("AZURE")
+    const p = {
+        firstname: $("#fornavn").val(),
+        lastname: $("#etternavn").val()
+    };
+
+    $.ajax({
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        'type': 'POST',
+        'url': "https://localhost:7170/api/Home/lagre",
+        'data': JSON.stringify(p),
+        'dataType': 'json',
+
     })
-    
-    $.get("https://localhost:7170/api/Home/retur", function (data) {
-        $("#ut").html(data)
-        console.log("PC")
-    })
+    //https://skattjohan.azurewebsites.net/api/Home/lagre
 }
 function App() {
     return (
         <div>
+            <label for="fornavn">Fornavn</label>
+            <input type="text" id="fornavn"></input> <br />
+
+            <label for="etternavn">Etternavn</label>
+            <input type="text" id="etternavn"></input>
+            <button onClick={test}></button>
             hei
-            <button onClick={test }>Test</button>
-            <div id="ut"></div>
+            
         </div>
     )
 }
