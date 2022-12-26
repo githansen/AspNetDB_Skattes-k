@@ -21,7 +21,7 @@ builder.Services.AddDbContext<Database>(options => options.UseSqlServer(builder.
 
 
 var app = builder.Build();
-DBinit.Initialize(app);
+//DBinit.Initialize(app);
 
 
 // Configure the HTTP request pipeline.
