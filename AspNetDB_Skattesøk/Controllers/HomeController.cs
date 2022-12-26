@@ -18,14 +18,7 @@ namespace AspNetDB_Skattesøk.Controllers
         [Route("retur")]
         public string retur()
         {
-            Person p = new Person()
-            {
-                firstname = "Kjell",
-                lastname = "Hansen",
-
-            };
-            _db.personer.Add(p);
-            _db.SaveChanges();
+            
             return "HEI";
         }
     }
