@@ -24,7 +24,7 @@ namespace AspNetDB_Skattesøk.Controllers
         [Route("lagre")]
         public string lagre(Person p)
         {
-            _db.Add(p);
+            _db.personer.Add(p);
             _db.SaveChanges();
             return "Suksess";
 
