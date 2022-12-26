@@ -24,7 +24,7 @@ namespace AspNetDB_Skattesøk.Controllers
                 lastname = "Hansen",
 
             };
-            _db.personer.Add(p);
+            _db.Add(p);
             _db.SaveChanges();
             return "HEI";
         }
