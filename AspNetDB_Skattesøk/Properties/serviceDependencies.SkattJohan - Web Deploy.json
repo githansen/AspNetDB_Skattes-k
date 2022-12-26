@@ -2,16 +2,9 @@
   "dependencies": {
     "mssql1": {
       "secretStore": "AzureAppSettings",
-      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/serverdbtestbach/databases/TestDatabase",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/dbservertestbach/databases/AspNetDB_Skattesøk_db",
       "type": "mssql.azure",
       "connectionId": "ConnectionStrings:Test",
-      "dynamicId": null
-    },
-    "mssql2": {
-      "secretStore": "AzureAppSettings",
-      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/serverdbtestbach/databases/TestDatabase",
-      "type": "mssql.azure",
-      "connectionId": "ConnectionStrings:Default",
       "dynamicId": null
     }
   }
