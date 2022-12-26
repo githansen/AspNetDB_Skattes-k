@@ -17,10 +17,10 @@ builder.Services.AddCors(options =>
             .AllowAnyMethod();
         });
 });
-//builder.Services.AddDbContext<Database>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
+builder.Services.AddDbContext<Database>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
 
 var app = builder.Build();
-//DBinit.Initialize(app);
+DBinit.Initialize(app);
 
 
 // Configure the HTTP request pipeline.
